@@ -1,0 +1,11 @@
+
+img{
+    width: 100%;
+    min-height: 500px;
+    max-height: 800px;
+    object-fit: cover;
+
+}
+ngb-carousel{
+    z-index: 1;
+}
