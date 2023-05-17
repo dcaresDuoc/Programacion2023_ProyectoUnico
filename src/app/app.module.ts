@@ -1,44 +1,56 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HeaderComponent } from './components/header/header.component';
-import { CarouselComponent, FooterComponent } from './components';
-import { OfferComponent } from './components/offer/offer.component';
-import { ImgIntermedioComponent } from './components/img-intermedio/img-intermedio.component';
-import { HelpToolbarComponent } from './components/help-toolbar/help-toolbar.component';
-import { MenuIntermedioComponent } from './components/menu-intermedio/menu-intermedio.component';
-import { OfferPcsComponent } from './components/offer-pcs/offer-pcs.component';
-import { OfferMacComponent } from './components/offer-mac/offer-mac.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MarcasComponent } from './components/marcas/marcas.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './home/components/carousel/carousel.component';
+import { SeccionofertasComponent } from './home/components/seccionofertas/seccionofertas.component';
+import { ImagenIntermediaComponent } from './home/components/imagen-intermedia/imagen-intermedia.component';
+import { MenuIntermedioComponent } from './home/components/menu-intermedio/menu-intermedio.component';
+import { OfertasMacComponent } from './home/components/ofertas-mac/ofertas-mac.component';
+import { OfertasDePcComponent } from './home/components/ofertas-de-pc/ofertas-de-pc.component';
+import { MarcasComponent } from './home/components/marcas/marcas.component';
+import { HelpToolbarComponent } from './home/components/help-toolbar/help-toolbar.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos/quienes-somos.component';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 
+const appRoutes:Routes=[
+  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
+  {path:'quienes-somos', component:QuienesSomosComponent},
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent}
 
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    HomeComponent,
     FooterComponent,
-    OfferComponent,
-    ImgIntermedioComponent,
-    HelpToolbarComponent,
+    CarouselComponent,
+    SeccionofertasComponent,
+    ImagenIntermediaComponent,
     MenuIntermedioComponent,
-    OfferPcsComponent,
-    OfferMacComponent,
+    OfertasMacComponent,
+    OfertasDePcComponent,
     MarcasComponent,
+    HelpToolbarComponent,
+    QuienesSomosComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
-    CarouselModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    CarouselComponent,
-    BrowserAnimationsModule
-
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

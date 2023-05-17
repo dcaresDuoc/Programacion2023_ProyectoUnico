@@ -1,0 +1,70 @@
+.container {
+    background-image: url("../../../assets/img/fondo-login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2{
+    color:white;
+}
+
+.login-form {
+    background-color: rgb(41, 41, 41);
+    width: 500px;
+    height: 450px;
+    padding: 50px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 30px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-top: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-top: 2.4em;
+    display: block;
+    font-weight: bold;
+    color: white;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #5c3a92;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #844fda;
+  }
+  
+  .register-link {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .register-link a {
+    color: #844fda;
+  }
+  
+
+
