@@ -16,7 +16,7 @@ h2{
     background-color: rgb(41, 41, 41);
     border: 1px solid rgb(41, 41, 41);
     width: 500px;
-    height: 820px;
+    height: 885px;
     margin: 0 auto;
     padding: 50px;
     border: 1px solid rgb(41, 41, 41);
@@ -70,3 +70,33 @@ h2{
     color: #844fda;
   }
   
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-danger:hover {
+    color: #721c24;
+    background-color: #f3b0b5;
+    border-color: #f5c6cb;
+  }
+  
+  .alert-danger .close {
+    color: #721c24;
+  }
+  
+  .alert-danger .close:hover {
+    color: #721c24;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  .alert-danger .alert-link {
+    color: #491217;
+    font-weight: bold;
+  }
