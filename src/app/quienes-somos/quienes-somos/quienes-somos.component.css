@@ -1,0 +1,61 @@
+.quienes-somos-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    margin-bottom: 6em;
+  }
+  .qs{
+    color: #533488;
+  }
+  
+  .descripcion {
+    width: 50%;
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  
+  .formulario-contacto {
+    width: 50%;
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 6em;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  textarea{
+    height: 10em;
+  }
+  
+  button[type="submit"] {
+    background-color: #5c3a92;
+    ;
+    color: white;
+    padding: 16px 25px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #844fda;
+  }
+
+  .imagen{
+    margin-bottom: -4px;
+    height: 240px;
+    width: 100%;
+
+  }

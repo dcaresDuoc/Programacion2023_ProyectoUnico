@@ -1,0 +1,69 @@
+<div class="containerp">
+
+    <div class="filtro">
+      <h2>Filtros:</h2>
+      <div class="filtros">
+
+        <h3>Marca:</h3>
+        <select [(ngModel)]="searchTerm">
+          <option value="">Todas las marcas</option>
+          <option *ngFor="let marca of getUniqueMarcas()" [value]="marca">{{ marca }}</option>
+        </select>
+        <h3>Precio:</h3>
+        <label>
+          Precio Mínimo:
+          <input type="number" [(ngModel)]="precioMinimo" />
+        </label>
+        <label>
+          Precio Máximo:
+          <input type="number" [(ngModel)]="precioMaximo"/>
+        </label>
+
+        <h3>Categoría:</h3>
+        <select [(ngModel)]="selectedCategory" >
+          <option value="">Todas las categorias</option>
+          <option  *ngFor="let category of getUniqueCategories()" [value]="category" >{{category}}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="contenedor-productos">
+
+      <div class="ordenar-label">
+        <div class="qproductos">
+          <h4>Productos encontrados: </h4>
+        </div>
+        
+        <div class="ordenarp">
+          <span>Ordenar Precio: </span>
+          <select  [(ngModel)]="selectedOrder">
+            <option value="asc">Ordenar por precio menor</option>
+            <option value="desc">Ordenar por precio mayor</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div id="producto">
+        <div class="tarjeta-producto" *ngFor="let product of products | marcaFilter: searchTerm | productFilter: datosEncabezado | categoriaFilter:selectedCategory | filtrarPrecio: precioMinimo: precioMaximo | orderByPrice: selectedOrder">
+          
+          <div class="cosas-container">
+            <img [src]="convertImagePath(product.imagen)" [alt]="product.nombre" class="imagen-produto"/>
+            <h3 class="nombre-producto">{{ product.nombre }}</h3>
+            <p class="marca-producto">{{ product.marca }}</p>
+            <h2 class="precio-producto">{{ convertToInt(product.precio) | formatPrice }}</h2>
+            <div class="overlay" (click)="redireccionar(product.id)"></div>
+            <button class="card-btn" (click)="addToCart(product)">Añadir al carrito</button>
+
+            <div class="espacio-emergente" >
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+<app-footer></app-footer>

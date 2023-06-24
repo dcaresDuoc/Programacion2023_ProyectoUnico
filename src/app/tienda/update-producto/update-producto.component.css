@@ -1,0 +1,299 @@
+.big-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 1550px;
+  }
+  
+  
+  
+  .titulon{
+    margin-bottom: 20px;
+  }
+  
+  .descdxd{
+    margin-left: 10px;
+  }
+  
+  .cescripcion{
+    height: 200px;
+  }
+  
+  #categoria {
+    /* Estilos personalizados */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+  }
+
+  .chale{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boton-buscar{
+    background-color: rgb(109, 66, 150);
+    color: #fff;
+    padding: 15px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .contenedor-btn-buscar{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para el input de tipo number */
+  #precio ,#stock, #productId{
+    /* Estilos personalizados */
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  
+  /* Estilo para el input de tipo file */
+  #imagen {
+    /* Estilos personalizados */
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilo para el botón "Examinar" del input file */
+  #imagen::file-selector-button {
+    margin-right: 10px;
+    /* Estilos personalizados */
+    background-color: rgb(109, 66, 150);;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el texto del botón "Examinar" del input file */
+  #imagen::file-selector-button::before {
+    content: 'Examinar';
+  }
+  
+  /* Estilo para el texto seleccionado en el input file */
+  #imagen::file-selected {
+    /* Estilos personalizados */
+    font-style: italic;
+    color: #777;
+  }
+  
+  .content-container{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+    background-color: rgb(84, 55, 99);
+    padding-left: 2.8em;
+    padding-right: 2.8em;
+  }
+  
+  .preview-container{
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-left: .8em;
+    width: 500px;
+  }
+  
+  .preview-content{
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .preview-datos{
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  
+  }
+  
+  .preview-item{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  
+  .preview-desc{
+  
+    padding-top: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descripcion-productoxd{
+    padding-top: 10px;
+    padding-left: 14px;
+    padding-right: 7px;
+    padding-bottom: 13px;
+    max-width: 100%;
+    max-height: 100%;
+    word-wrap: break-word;
+    overflow-y: auto;
+  }
+  
+  .text-container{
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
+    
+  }
+  
+  .preview-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-previewe{
+    border-radius: 15px;
+    padding: 24px;
+    width: 400px;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-container {
+      border-radius: 15px;
+      margin-right: .8em;
+      width: 500px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .product-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+    
+    .product-form .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .product-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    
+    .product-form input[type="text"],
+    .product-form textarea,
+    .product-form select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .product-form button[type="submit"] {
+      background-color: rgb(109, 66, 150);
+      color: #fff;
+      padding: 20px 50px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contenedor-boton{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 215px;
+    }
+  
+    .product-form button[type="submit"]:hover, .boton-buscar:hover {
+      background-color: rgb(93, 69, 114);
+    }
+  
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .checkbox-label {
+      margin-left: 15px;
+    }
+    
+    .checkbox-custom {
+      margin-left: 5px;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .checkbox-custom:checked {
+      background-color: rgb(148, 68, 223);
+      border-color: rgb(148, 68, 223);
+    }
+    
+    .checkbox-custom:checked::before {
+      content: "\2713";
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    
+    

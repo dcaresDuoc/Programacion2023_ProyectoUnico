@@ -1,0 +1,244 @@
+.containerp {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+  
+    justify-content: center;
+  
+  
+  }
+  
+  .filtro {
+    background-color: #e6e6e6;
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .filtro h2{
+    padding: 10px;
+  }
+  
+  .contenedor-productos {
+    margin-top: 20px;
+    width: 1500px;
+    height: 1200px;
+    overflow-y: auto;
+    margin-right: 40px;
+    padding-top: 12px;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .ordenar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .qproductos {
+    margin-left: 0.8%;
+    align-self: flex-start;
+  }
+  
+  .ordenarp {
+    align-self: flex-end;
+    margin-right: 5.8%;
+  }
+  
+  #producto {
+    border-radius: 7px;
+    background-color: #e6e6e6;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tarjeta-producto {
+    background-color: #e6e6e6;;
+    width: 250px;
+    height: 390px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    text-align: center;
+  }
+
+  .cosas-container{
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: height 0.5s ease-out;
+  }
+
+
+
+  .espacio-emergente{
+    box-shadow: 0px -20px 20px -18px rgba(0, 0, 0, 0.7);    
+    z-index: 7;
+    background-color: #e6e6e6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.2s ease-out;
+  }
+  
+
+  .cosas-container:hover .overlay{
+    opacity: 0.3;
+  }
+
+  .cosas-container:hover .espacio-emergente{
+    
+    height: 35%;
+  }
+
+
+
+  .overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .tarjeta-producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  
+  .tarjeta-producto p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .filtros {
+    background-color: #825db3;
+    margin-top: 6px;
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 35%;
+  }
+
+  .filtros h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .filtros input[type="number"],
+  .filtros input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .card-btn {
+    
+    left: 50%;
+    top: 82.5%;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: #7763aa;
+    color: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 8;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  .cosas-container:hover .card-btn{
+    opacity: 1;
+  }
+
+.nombre-producto{
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.precio-producto{
+  position: absolute;
+  left: 49%;
+  top: 88%;
+  transform: translate(-50%, -50%);
+}
+
+.marca-producto{
+  position: absolute;
+  left: 50%;
+  top: 79%;
+  opacity: .5;
+  font-weight: bold;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media (max-width: 1400px) {
+  .containerp{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

@@ -1,0 +1,110 @@
+
+<div class="big-container">
+
+  <div class="content-container">
+    <div class="product-container">
+      <h2>Crear Producto</h2>
+      <form class="product-form" (ngSubmit)="saveProduct()">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" [(ngModel)]="product.nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" [(ngModel)]="product.categoria" name="categoria" multiple required>
+            <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca" [(ngModel)]="product.marca" name="marca" required>
+        </div>
+        <div class="form-group">
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock" [(ngModel)]="product.stock" name="stock" required>
+        </div>
+        <div class="form-group">
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" [(ngModel)]="product.precio" name="precio" required>
+        </div>
+        <div class="form-group oferta">
+          <label for="oferta">Oferta:</label>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="oferta" [(ngModel)]="product.oferta" name="oferta" class="checkbox-custom">
+            <label class="checkbox-label" for="oferta">Agregar oferta</label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="imagen">Imagen:</label>
+          <input type="file" id="imagen" (change)="onFileSelected($event)" name="imagen" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="descripcion" >Descripción:</label>
+          <textarea id="descripcion" class="cescripcion" [(ngModel)]="product.descripcion" name="descripcion" required></textarea>
+        </div>
+        <div class="form-group contenedor-boton">
+          <button type="submit">Guardar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="preview-container">
+
+      <div class="preview-content">
+
+        <h2 class="titulon">Vista previa producto:</h2>
+        <div class="preview-datos">
+        <div class="preview-item">
+          <label>Nombre:</label>
+          <p>{{ product.nombre }}</p>
+        </div>
+      
+        <div class="preview-item">
+          <label>Categoría:</label>
+          <p>{{ product.categoria.join(', ') }}</p>
+        </div>
+      
+        <div class="preview-item">
+          <label>Marca:</label>
+          <p>{{ product.marca }}</p>
+        </div>
+
+        <div class="preview-item">
+          <label>Stock:</label>
+          <p>{{ product.stock}}</p>
+        </div>
+      
+        <div class="preview-item">
+          <label>Precio:</label>
+          <p>{{ product.precio | formatPrice }}</p>
+        </div>
+        
+        <div class="preview-item">
+          <label>Oferta:</label>
+          <p>{{ product.oferta ? 'Sí' : 'No' }}</p>
+        </div>
+        </div>
+
+        <div class="preview-item imagen-previewe">
+          <img *ngIf="imagePreview" [src]="imagePreview" alt="Vista previa de la imagen">
+        </div>
+      
+        <div class="preview-desc">
+          <label class="descdxd">Descripción:</label>
+          <div class="text-container">
+            <p class="descripcion-productoxd">{{ product.descripcion }}</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+
+  

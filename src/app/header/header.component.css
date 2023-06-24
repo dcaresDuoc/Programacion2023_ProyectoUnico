@@ -1,0 +1,375 @@
+.header_container{
+  height: 220px;
+  background-color: black;
+
+}
+.lupita{
+  margin-top: 3px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+a{
+  cursor:pointer;
+}
+
+.loguito{
+  margin-top: 15px;
+  width: 130px;
+  margin-right: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.loguito.clicked{
+  animation: scaleAnimation 0.3s;
+}
+
+.lupita.clicked1{
+  animation: scaleAnimation 0.3s;
+}
+
+.carrito.clicked3{
+  animation: scaleAnimation 0.3s;
+}
+
+.usuario.clicked2{
+  animation: scaleAnimation 0.3s;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    transition: all .3s;
+    z-index: 99999999999;
+    height: 200px;
+}
+
+
+.header_superior{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+    padding-top: 2em;
+  height: 100px;
+}
+
+.arriba{
+  display: flex;
+}
+
+
+.header__nav{
+  margin-left: 1.8em;
+  margin-top: .8em;
+}
+
+.header3{
+  width: 100%;
+  height: 60px;
+  background: black;
+  box-shadow: 0 0 10px 1px;
+  margin-bottom: 40px;
+}
+
+
+.menu3 {
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+
+.menu3 li{
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  margin-right: 30px;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu3 li a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+.menu3 li:hover {
+  transform: scale(1.1);
+  color: #a166ff;
+}
+
+.menu3 li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 25%;
+}
+
+.menu3 li:hover::after {
+  width: 100%;
+  height: 1px;
+  background-color: #a166ff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+#buscar {
+  width: 23em;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+#buscar-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#buscar-btn img {
+  height: 38px;
+}
+
+li{
+  display: flex;
+}
+
+.usuario{
+  margin-left: 2em;
+  width: 43px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.usuario-gatuno{
+  margin-top: 5px;
+  margin-left: 2em;
+  width: 43px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.carrito-logo-container{
+  margin-left: 13px;
+  width: 45px;
+  height: 40px;
+  position: relative;
+}
+
+.numerito-container{
+  cursor: pointer;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0;
+  padding-top: 2px;
+  padding-left: 5px;
+  right: 0;
+  background-color: #ED1B24;
+  position: absolute;
+}
+
+.numerito{
+  font-size: 14px;
+  position: absolute;
+  margin-right: 17px;
+  bottom: 7%;
+  left: 19%;
+}
+
+
+
+.carrito{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+
+.cerrar-popup{
+  margin-bottom: 8px;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  width: 20px;
+  
+}
+
+.popup-container2{
+  align-items: end;
+  position: absolute;
+  left: 67%;
+  top: 65%;
+  height: 300px;
+  width: 22.5em;
+  max-height: 80vh; /* Establece una altura máxima para el popup */
+  overflow-y: auto; /* Agrega scroll vertical al contenido del popup si es necesario */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.basura{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popup-contente{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  height: 100%;
+}
+
+
+.popup-container{
+  position: absolute;
+  top: calc(44% + 10px);
+  left: 46%;
+  width: 22.5em;
+  max-height: 80vh; /* Establece una altura máxima para el popup */
+  overflow-y: auto; /* Agrega scroll vertical al contenido del popup si es necesario */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999999999999;
+}
+
+.cerrar-popup{
+  margin-bottom: 8px;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  width: 20px;
+  
+}
+
+.popup-content a {
+  display: block;
+  color: #ffffff;
+  background-color: #8e54e9;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.popup-content a:hover {
+  background-color: #8e54e9;
+}
+
+.popup-content a:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+.cerrar-popup{
+  margin-bottom: 8px;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  width: 20px;
+  
+}
+
+.conteneor{
+  margin-top: 40px;
+}
+
+
+.botoncio-poderoso{
+  cursor: pointer;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7352a8;
+  border-radius: 10px;
+  width: 130px;
+  height: 50px;
+}
+
+.popup-contente h2{
+  color: #f5f5f5;
+}
+
+
+
+
+
+
+.popup-content a:hover {
+  background-color: #8e54e9;
+}
+
+.popup-content a:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .header__logo {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header__nav {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .header__nav ul {
+    justify-content: center;
+  }
+  
+  .header__nav li {
+    margin: 0 10px;
+  }
+}

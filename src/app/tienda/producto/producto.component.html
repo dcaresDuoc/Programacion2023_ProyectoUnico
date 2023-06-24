@@ -1,0 +1,45 @@
+<div class="big-container">
+    <div class="product-container">
+        <div class="imagen-producto-c">
+            <img [src]="convertImagePath(product.imagen)" class="imagen-producto" alt="">
+        </div>
+        <div class="content-producto">
+
+            <div class="derecha-container">
+
+            <div class="titulon">
+                <h3>{{product.nombre}}</h3>
+            </div>
+            <H4>{{product.marca}}</H4>
+            <div class="precios">
+                <p>PRECIO: </p>
+                <p>{{product.precio | formatPrice}}</p>
+            </div>
+            <div class="botones">
+                <div class="cont-carrito">
+                    <a class="boton-carrito" (click)="addToCart(produc)">Agregar al carro</a>
+                </div>
+                <div class="cont-comprar">
+                    <a class="boton-comprar">Comprar ahora</a>
+                </div>
+                
+            </div>
+            <div class="stock-online">
+                <p>Stock Online: </p>
+                <p>{{product.stock}} unidades</p>
+            </div>
+            <div class="caja-container">
+            <h4 class="oeno">Descripcion: </h4>
+            <div class="descripcion-container">
+            <p>
+               {{product.descripcion}} 
+            </p>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

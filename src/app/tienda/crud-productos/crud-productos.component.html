@@ -1,0 +1,31 @@
+<div class="big-container">
+    <div class="containero">
+        <div class="header">
+            <h2>Lista de Productos</h2>
+            <div class="bonoes">
+            <div class="boton-actualizar" routerLink="/update-producto" ><img src="../../../assets/img/actualizar.png" alt=""></div>
+            <div routerLink="/crear-producto" class="agregar-producto"><img src="../../../assets/img/agregar.png" alt=""></div>
+            </div>
+          </div>
+
+        <div class="product-list" *ngFor="let product of products">
+          <div class="product-image">
+            <img [src]="convertImagePath(product.imagen)" alt="Imagen del producto">
+          </div>
+          <div class="product-details">
+            <p><strong>Nombre:</strong> {{ product.nombre }}</p>
+            <p><strong>Precio:</strong> {{ product.precio }}</p>
+            <p><strong>Marca:</strong> {{ product.marca }}</p>
+            <p><strong>Categoría:</strong> {{ getCategoryNames(product.category) }}</p>
+            <p><strong>Stock:</strong> {{ product.stock}}</p>
+            <p><strong>Oferta: </strong>{{ product.oferta ? 'Sí' : 'No' }}</p>
+          </div>
+          <div class="product-actions">
+            <div class="boton-borrar" (click)="deleteProduct(product.id)" ><img src="../../../assets/img/borrar.png" alt=""></div>
+            <div class="boton-actualizar" (click)="redireccionar(product.id)" ><img src="../../../assets/img/actualizar.png" alt=""></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

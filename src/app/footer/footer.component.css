@@ -1,0 +1,219 @@
+.footer{
+	position: relative;
+	display: flex;
+	background-color: black;
+	height: 250px;
+	width: 100%;
+}
+
+h3 {
+	margin-top: 25px;
+	color: white;
+	animation: brillo 2s infinite;
+  }
+
+.div1{
+	
+	padding-top: 20px;
+	display: flex;
+	height: 100%;
+	width: 60%;
+	padding-bottom: 10px;
+	
+}
+
+.div1 img{
+	position: absolute;
+	margin-left: 3%;
+	object-fit: cover;
+	height: 85%;
+}
+
+.div2{
+	justify-content: end;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.texto-container{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.texto-container .span1
+{	
+	color: white;
+	margin-top: 4.3%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	animation: brillo 2s infinite;
+}
+
+.copy{
+	color: white;
+	animation: brillo 2s infinite;
+	margin-top: 9px;
+	font-size: 13px;
+}
+
+
+.spano{
+	font-size: 11px;
+	color: #b9b9b9;
+	margin-bottom: 15px;
+}
+
+.span2{
+	color: rgb(110, 110, 110);
+}
+
+.yo-container{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	margin-top: 50px;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.yo-container img{
+	margin-bottom: 10px;
+	height: 210px;
+	object-fit: contain;
+}
+
+.div3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 60%;
+}
+
+.section-conta{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.section-conta h4{
+	color:white;
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	animation: brillo 2s infinite;
+}
+
+.fa-2x{
+	font-size: 30px;
+}
+
+
+.wrapper{
+	position: absolute;
+	top:65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 290px;
+	height: 60%;
+}
+
+.wrapper ul{
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper ul li{
+	width: 65px;
+	height: 65px;
+	line-height: 70px;
+	margin: 0 10px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 5px solid #f5f5f5;
+	float: left;
+	transform: all 0.5 ease;;
+}
+
+.wrapper ul li .fab{
+	color: #f5f5f5;
+
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.youtube{
+	border: 5px solid red;
+	box-shadow: 0 0 15px red;
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-youtube{
+	color: red;
+	text-shadow: 0 0 15px red; 
+}
+
+
+.wrapper ul li:hover.twitter{
+	border: 5px solid #1DA1F2;
+	box-shadow: 0 0 15px #1DA1F2;
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter{
+	color: #1DA1F2;
+	text-shadow: 0 0 15px #1DA1F2; 
+}
+
+.wrapper ul li:hover.tiktok{
+	border: 5px solid #69c9d0;
+	box-shadow: 0 0 15px #69c9d0;
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-tiktok{
+	color: #ee1d52;
+	text-shadow: 0 0 15px #69c9d0; 
+}
+
+.wrapper ul li:hover.instagram{
+	border: 5px solid #E1306C;
+	box-shadow: 0 0 15px #E1306C;
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram{
+	color: #E1306C;
+	text-shadow: 0 0 15px #E1306C; 
+}
+
+.wrapper ul li:hover.discord{
+	border: 5px solid #5865F2 ;
+	box-shadow: 0 0 15px #5865F2 ;
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-discord{
+	color: #5865F2 ;
+	text-shadow: 0 0 15px #5865F2 ; 
+}
+
+@keyframes brillo {
+	0% { text-shadow: 0px 0px 10px rgba(255, 255, 255, 1); }
+	50% { text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9); }
+	100% { text-shadow: 0px 0px 10px rgba(255, 255, 255, 1); }
+}

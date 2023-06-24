@@ -1,0 +1,35 @@
+<ng-container >
+    <div class="popup-container2">
+      <div class="popup-content2">
+        <div id="producto" *ngFor="let producto of myCart$ | async">
+          <div class="tarjeta-producto">
+            <img [src]="convertImagePath(producto.imagen)" alt="">
+            <h3>{{producto.nombre}}</h3>
+            <p>Precio: {{  totalProduct(producto.precio, producto.cantidad) | formatPrice  }}</p>
+            <div class="contenedor-crud">
+              <div class="cantidad-contenedor">
+              <label class="cantidadLoca" for="cantidad">Cantidad:</label>
+              <div class="sube-baja">
+              <div class="simbolos baja">
+                <img src="../../../assets/img/menos.png" (click)="updateUnits('minus',producto.id)">
+              </div>
+                <p>{{producto.cantidad}}</p>
+              <div class="simbolos sube">
+                <img src="../../../assets/img/más.png" (click)="updateUnits('add',producto.id)">
+              </div>
+            </div>
+              </div>
+              <div class="eliminar-producto" (click)="deleteFromCarrito(producto.id)"><img src="../../../assets/img/borrar.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="totales">
+          <h2>Total</h2>
+          <h2>{{ totalCart() | formatPrice }}</h2>
+        </div>
+        <a>Proceder a la compra</a>
+        <a class="redirect-carrito" routerLink="/carritoGrande">Carrito</a>
+
+      </div>
+    </div>
+  </ng-container>

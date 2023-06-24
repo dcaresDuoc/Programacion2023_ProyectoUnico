@@ -1,0 +1,145 @@
+.big-container{
+    padding-top: 25px;
+    display: flex;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imagen-producto-c{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 2em;
+    width: 50%;
+    
+}
+
+.imagen-producto-c img{
+    object-fit: contain;
+    padding: 2em;
+    width:500px;
+    height: 500px;
+}
+
+.derecha-container{
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.titulon{
+    margin-left: 2.2em;
+    width: 500px;
+    height: 120px;
+    margin-bottom: 2em;
+}
+
+
+h4{
+    margin-left: 2.5em;
+}
+.precios{
+    margin-left: 2.2em;
+    width: 500px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.precios p{
+    font-size: 1.5em;
+}
+
+.product-container{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+
+    background-color: white;
+    margin-top: 70px;
+    display: flex;
+    width: 1300px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-carrito, .cont-comprar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2em;
+    text-decoration: none; /* Elimina la decoración de subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    cursor: auto; /* Restablece el cursor a su valor predeterminado */
+    outline: none; /* Elimina el contorno al hacer clic en el enlace */
+    width: 500px;
+    height: 70px;
+    background-color: rgb(111, 75, 145);
+    border-radius: 7px;
+}
+
+.boton-comprar, .boton-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+}
+
+.content-producto{
+    display: block;
+    width: 50%;
+    padding-left: 4em;
+    padding-top: 2em;
+    padding-right: 1em;
+    background-color: #ffff;    
+}
+
+
+.stock-online{
+    margin-left: 2.2em;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.stock-online p{
+    font-size: 1.5em;
+}
+
+.oeno{
+    margin-top: 2em;
+    margin-bottom: .3em;
+}
+
+.descripcion-container{
+    margin-left: 2.2em;
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+
+}
+
+.caja-container{
+    height: 270px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}

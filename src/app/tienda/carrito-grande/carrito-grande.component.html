@@ -1,0 +1,60 @@
+<ng-container >
+    <div class="popup-container2">
+
+
+      <div class="popup-content2">
+
+        <div id="producto" *ngFor="let producto of myCart$ | async">
+          <div class="tarjeta-producto">
+            <img [src]="convertImagePath(producto.imagen)" alt="">
+            <h3>{{producto.nombre}}</h3>
+            <p>Precio: {{  totalProduct(producto.precio, producto.cantidad) | formatPrice  }}</p>
+            <div class="contenedor-crud">
+              <div class="cantidad-contenedor">
+              <label class="cantidadLoca" for="cantidad">Cantidad:</label
+                >
+              <div class="sube-baja">
+              <div class="simbolos baja">
+                <img src="../../../assets/img/menos.png" (click)="updateUnits('minus',producto.id)">
+              </div>
+                <p>{{producto.cantidad}}</p>
+              <div class="simbolos sube">
+                <img src="../../../assets/img/más.png" (click)="updateUnits('add',producto.id)">
+              </div>
+            </div>
+              </div>
+              <div class="eliminar-producto" (click)="deleteFromCarrito(producto.id)"><img src="../../../assets/img/borrar.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="contenedor-testos">
+        <div class="totales">
+        <h2>Total</h2>
+        <h2>{{ totalCart() | formatPrice }}</h2>
+      </div>
+      <div class="botones-container">
+        <a class="redirect-carrito boton1">Proceder a la compra</a>
+        <a class="redirect-carrito boton2" routerLink="/tienda">Seguir comprando</a>
+      </div>
+      <div class="fotos-container">
+        <div class="izquierda">
+          <div class="arriba"><img src="../../../assets/img/carrito/transferencia_bancaria(2).png" alt=""></div>
+          <div class="medio"><img src="../../../assets/img/carrito/redcompra(1).png" alt=""></div>
+          <div class="abajo"> <img src="../../../assets/img/carrito/mercado-pago.png" alt=""> </div>
+        </div>
+        <div class="derecha">
+          <div class="arriba1"><img src="../../../assets/img/carrito/credito.png" alt=""></div>
+          <div class="medio1"><img src="../../../assets/img/carrito/banco_estado_4a24cuotas.png" alt=""></div>
+          <div class="abajo1"><img src="../../../assets/img/carrito/hites.png" alt=""></div>
+        </div>
+
+      </div>
+      </div>
+      
+
+    </div>
+  </ng-container>
+
+  <app-footer></app-footer>

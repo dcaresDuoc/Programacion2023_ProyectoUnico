@@ -1,0 +1,52 @@
+<div class="header_container">
+<header class="header">
+    <div class="header_superior">
+          <a routerLink="/home" ><img src="../../assets/img/logo.jpg" alt="Logo" class="loguito" ></a>
+            <input type="text" id="buscar" (keyup)="obtenerDatosEncabezado($event)" placeholder="Buscar">
+            <button routerLink="/tienda" type="submit" id="buscar-btn"><img src="../../assets/img/lupa.png" alt="Buscar" class="lupita"></button>
+            <a ><img src="../../assets/img/usuario.png" alt="" class="usuario" (click)="openPopup('popup1')"></a>
+            <ng-container *ngIf="showPopup1">
+              <div class="popup-container">
+                <a class="cerrar-popup" (click)="closePopup('popup1')">X</a>
+                <div class="popup-content">
+                  <app-login (registerClicked)="closePopup('popup1')"></app-login>
+                </div>
+              </div>
+            </ng-container>
+            <div class="carrito-logo-container" (click)="openPopup('popup2')">
+              <div class="numerito-container">
+                <p class="numerito">{{ (myCart$ | async)?.length }}</p>
+              </div>
+              <a><img src="../../assets/img/carrito.png" class="carrito"></a>
+            </div>
+            <div class="carrito-div" *ngIf="showPopup2"> 
+              <app-carrito class="carrito-cire"></app-carrito>
+            </div>
+            <a *ngIf="isLoggedIn()"><img (click)="openPopup('popup3')" class="usuario-gatuno" src="../../assets/img/boton-usuario.jpg" alt=""></a>
+            <div class="popup-container2" *ngIf="showPopup3 && isLoggedIn()">
+              <p class="basura" (click)="closePopup('popup3')">X</p>
+              <div class="popup-contente">
+                <h2>{{username}}</h2>
+                <div class="conteneor" >
+                  <div routerLink="/crud-producto"  (click)="openPopup('popup3')" class="botoncio-poderoso chau"><p class="basura">Admin Panel</p></div>
+                  <div (click)="logout()"  class="botoncio-poderoso"><p class="basura">Logout</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <nav class="header__nav">
+      <div class="header3">
+        <ul class="menu3">
+            <li><a routerLink="/home">Inicio</a></li>
+            <li><a routerLink="/tienda">Hardware</a></li>
+            <li><a routerLink="/crud-producto">Pc Gamer</a></li>
+            <li><a routerLink="/update-producto">Monitores</a></li>
+            <li><a routerLink="/crear-producto">Celulares</a></li>
+            <li><a href="">Juegos</a></li>
+            <li><a routerLink="/producto">Accesorios</a></li>
+            <li><a routerLink="/quienes-somos">¿Quienes Somos?</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>

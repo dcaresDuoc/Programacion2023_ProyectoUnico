@@ -1,0 +1,60 @@
+.big-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.arriba{
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    width: 100%;
+    height: 100%;
+}
+
+.arriba img{
+    width: 335px;
+    height: 335px;
+}
+
+.nope-uwu{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abajo{
+    display: flex;
+    justify-content: end;
+    align-items:baseline;
+    width: 100%;
+    height: 70%;
+}
+.contenedor-textos{
+    margin-right: 25px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.abajo img{
+    width: 50px;
+}
