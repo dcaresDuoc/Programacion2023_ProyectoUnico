@@ -68,6 +68,13 @@ Asegúrate de tener una conexión activa a Internet para poder acceder correctam
 - ![103925017-e7673b80-50e4-11eb-9379-ceb82e3f382c(1)](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/09215158-4354-4d42-8659-f817a73d57eb) [`Spring Boot`](https://spring.io/projects/spring-boot): Java 17 / SpringBoot Version 3.1 / Spring Security 6.1, Framework de Java utilizado para la construcción del back-end del proyecto.
 - ![43b8c92d2a8fcd2a95ae6bf30c18494dae92467a](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/1aeaa2a5-27dd-4d90-b70e-4112693ea205) [`SQL Server`](https://www.microsoft.com/es-es/sql-server/): SQL Server Version 19, Sistema de gestión de bases de datos utilizado para almacenar y administrar los datos del proyecto.
 
+## Base de datos
+  <br>
+<p align="center">
+  <img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/2cc14006-b971-48c3-814a-7e6be473e0be">
+</p>
+<br>
+
 
 ## Desarrolladores
 
