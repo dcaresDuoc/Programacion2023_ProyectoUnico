@@ -8,7 +8,7 @@ El propósito de esta página web es proporcionar a los usuarios una plataforma 
 
 <br>
 <p align="center">
-  <img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/862679e8-8e37-4593-94ee-5d5ca0378c27" alt="asd">
+  <img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/862679e8-8e37-4593-94ee-5d5ca0378c27"  alt="asd">
 </p>
 <br>
 
@@ -16,11 +16,36 @@ El propósito de esta página web es proporcionar a los usuarios una plataforma 
 
 ## Funcionalidades
 
-- :heavy_check_mark: :gear: `CRUD de productos`: Permite realizar operaciones de crear, leer, actualizar y eliminar productos en la tienda.
-- :heavy_check_mark: :key: `Login de usuario por roles`: Los usuarios pueden iniciar sesión y se les asignará un rol.
-- :heavy_check_mark: :bust_in_silhouette: `Usuario normal`: Los usuarios normales pueden ver y comprar productos.
+- :heavy_check_mark: :gear: `CRUD de productos`: Permite realizar operaciones de crear, leer, actualizar y eliminar productos en la tienda (solo puede acceder usuario ADMIN).  <br>
+
+  <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126971589141995540/image.png" width="400px" alt="asd">  <br>
+  <br>
+  <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126971676417069106/image.png" width="400px" alt="asd">  <br>
+  <br>
+  <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126971506572927077/image.png" width="400px" alt="asd">  <br>
+
+- :heavy_check_mark: :key: `Login y Register de usuario por roles`: Los usuarios pueden Registrarse y se les asignará el rol de usuario normal automáticamente.
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126972212369424454/image.png" width="400px" alt="asd">  <br>
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126972333404475562/image.png" width="400px" alt="asd">  <br>
+ 
+- :heavy_check_mark: :bust_in_silhouette: `Usuario normal`: Los usuarios normales solo pueden ver y comprar productos.
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126971766074515486/image.png" width="400px" alt="asd">  
+ <br>
+ 
+- :heavy_check_mark: :shopping_cart: `Carrito de Compras`: Permite a los usuarios agregar productos de interes a un carrito virtual y realizar compras.
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126975410530427090/image.png" width="400px" alt="asd">  <br>
+ 
 - :heavy_check_mark: :crown: `ADMIN`: Los usuarios con rol de administrador pueden utilizar todas las funciones del CRUD de productos de la tienda.
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126973113918292028/image.png" width="400px" alt="asd">  <br>
+ 
 - :heavy_check_mark: :no_entry_sign: `Pantalla de no autorizado`: Los usuarios que no sean administradores serán redirigidos a una pantalla de "no autorizado" cuando intenten acceder a las funciones del CRUD.
+ <br>
+ <img src="https://cdn.discordapp.com/attachments/1092879061551952003/1126971948166037564/image.png" width="600px" alt="asd">  <br>
 
 
 ## Acceso al Proyecto
@@ -46,6 +71,6 @@ Asegúrate de tener una conexión activa a Internet para poder acceder correctam
 
 ## Desarrolladores
 
-| [<img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/c2df030e-fb75-419a-8229-ae0e283e6857" width="115px" height="150px"><br>Manolo Diaz](https://github.com/mndiazf) | [<img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/0883d2d2-9292-4b22-aaf4-ae86b5d5f426" width="115px" height="150px"><br>David Escobar](https://github.com/David3scobar) |
+| [<img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/c2df030e-fb75-419a-8229-ae0e283e6857" width="130px" height="150px"><br>Manolo Diaz](https://github.com/mndiazf) | [<img src="https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/0883d2d2-9292-4b22-aaf4-ae86b5d5f426" width="115px" height="150px"><br>David Escobar](https://github.com/David3scobar) |
 | :---: | :---: |
 
