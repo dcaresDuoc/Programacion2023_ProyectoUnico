@@ -53,7 +53,7 @@ El propósito de esta página web es proporcionar a los usuarios una plataforma 
 Para acceder al proyecto, sigue los pasos a continuación:
 
 1. 🌐 Abre tu navegador web.
-2. 🔗 En la barra de direcciones del navegador, ingresa la siguiente dirección: `54.242.222.243`.
+2. 🔗 En la barra de direcciones del navegador, ingresa la siguiente dirección: `3.83.179.143`.
 3. ⏎ Presiona Enter.
 4. ⏳ Espera a que el navegador cargue y se conecte a la dirección IP proporcionada.
 
