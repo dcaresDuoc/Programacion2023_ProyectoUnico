@@ -62,10 +62,10 @@ Asegúrate de tener una conexión activa a Internet para poder acceder correctam
 
 ## Herramientas Utilizadas
 
-- ![IntelliJ_IDEA_Icon svg(1)](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/ebe04f63-7947-43f8-80ff-e0dd746ffd61) [`IntelliJ IDEA`](https://www.jetbrains.com/idea/): Entorno de desarrollo integrado (IDE) utilizado para el desarrollo del proyecto.
-- ![file_type_vscode_icon_130084](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/1390ed53-a339-4262-b7a2-19b19630ade2) [`Visual Studio Code`](https://code.visualstudio.com/): Editor de código fuente utilizado para el desarrollo de la api SpringBoot del proyecto.
-- ![Angular_full_color_logo svg](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/d23bfddb-733a-47d5-9516-1fccb70ea2f9) [`Angular`](https://angular.io/): Angular version 15.2.7, Framework de desarrollo web utilizado para la construcción del frontend del proyecto.
-- ![103925017-e7673b80-50e4-11eb-9379-ceb82e3f382c(1)](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/09215158-4354-4d42-8659-f817a73d57eb) [`Spring Boot`](https://spring.io/projects/spring-boot): Java 17 / SpringBoot Version 3.1 / Spring Security 6.1, Framework de Java utilizado para la construcción del backend del proyecto.
+- ![IntelliJ_IDEA_Icon svg(1)](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/ebe04f63-7947-43f8-80ff-e0dd746ffd61) [`IntelliJ IDEA`](https://www.jetbrains.com/idea/): Entorno de desarrollo integrado (IDE) utilizado para el desarrollo de la api SpringBoot del proyecto.
+- ![file_type_vscode_icon_130084](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/1390ed53-a339-4262-b7a2-19b19630ade2) [`Visual Studio Code`](https://code.visualstudio.com/): Editor de código fuente utilizado para el desarrollo front-end de la aplicacion.
+- ![Angular_full_color_logo svg](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/d23bfddb-733a-47d5-9516-1fccb70ea2f9) [`Angular`](https://angular.io/): Angular version 15.2.7, Framework de desarrollo web utilizado para la construcción del front-end del proyecto.
+- ![103925017-e7673b80-50e4-11eb-9379-ceb82e3f382c(1)](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/09215158-4354-4d42-8659-f817a73d57eb) [`Spring Boot`](https://spring.io/projects/spring-boot): Java 17 / SpringBoot Version 3.1 / Spring Security 6.1, Framework de Java utilizado para la construcción del back-end del proyecto.
 - ![43b8c92d2a8fcd2a95ae6bf30c18494dae92467a](https://github.com/dcaresDuoc/Programacion2023_ProyectoUnico/assets/110750463/1aeaa2a5-27dd-4d90-b70e-4112693ea205) [`SQL Server`](https://www.microsoft.com/es-es/sql-server/): SQL Server Version 19, Sistema de gestión de bases de datos utilizado para almacenar y administrar los datos del proyecto.
 
 
